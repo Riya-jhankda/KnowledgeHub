@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical"
+    tools:context=".AndroidActivity">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANDROID DEVELOPMENT"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:textColor="@color/brown"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="454dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/android" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+       <TextView
+           android:layout_margin="30dp"
+           android:text="
+Manifest-
+Permission related querries, like name of application
+
+Java Folder-
+1.	MainActivity-
+It contains all the operations related functions, like what ‘ll happen if press a button , what if we slide left or right an activity page.
+It contains all the source code.
+Res Folder –
+2.	Layout-
+It contains all the design related querries , like what our application should look like .
+It uses xml as language to change and modify the designs.
+3.	Drawable-
+It contains all the images that we are going to use in the application.
+4.	Values-
+It contains all the values which are stored in the application like colour , theme, strings
+1 important thing to remember is that we should not hard code our strings that is we should not directly use them in our code . we need to 1st define them in our strings file and assign a values to it just like the key and value pairs in dictionary .- this is considerd as a good practice.
+Gradle Script-
+5.	Gradle-
+It contains all the 3rd party libraries we use to interact with the user. Like API’s, Volley etc.
+We introduce those libraries in the gradle so that the features of those libraries will  become available for us whilew we are codeing the application .
+Structure of the MainActivity-
+  1. MainActivity -is the main class which inherits the AppCompactActivity class .
+   2. AppCompactActivity class – it is some predefined class with some predefined fucntions which will be using in our mainactivity class
+-It is the parent class
+3.  OnCreate function – it  is 1 such function which is overriden in the mainActivity class by inheriting it .
+-also the 1st function which is called when we call our mainActivity
+4. savedInstances is a variable name whose data type is bundle that we pass in the main function
+-as we change our activity from 1 to another and when we return to the previous activity we want that activity to initiate at the same point where we left it so for this android uses bundle : to store the activity ‘s function and the point where we left in case we want to strt from there after some time .
+5. setContentView(R.layout.activity_main)- this function connects the source code to the design file , here activity_main is the design file for MainActivity source code
+
+CREATED AN APPLICATION NAMED AS GRWM-
+so this is a simple application with a single layout of activity_main type and a single source code file named as MainActivity .
+Linear layout-
+ it adds components/widgets horizontally or virticaly in line .
+We can change the orientation to vertical as well but we have to mention this in the layout file under linear layout explicitily.
+Constarint Layout-
+If we wants to add components such that they have some constraints fixed on each side of the activity.
+Constraint layout is used when we add widgets in randoms position on the activity
+Relative Layout-
+Such that each widget on the activity relate to another in a manner and have some relationship .
+Android Activity Lifecycle –
+1.OnCreate(  )- when we create an activity it is called then
+2.On Start( )- when the user starts the activity
+3. On Resume( )- when the activity initiates again at the same point after some restrictions
+4. On Pause( )-the activity pauses due to some restrictions
+5. On stop( )- the activity stop accessing data , as it is in the state of being paused .
+6. On Restart( )- the restarting of activity after we call it again.
+7. On Destroy( )- the killing of the all the activities related to that application when left un touched for a long period of time.
+
+Scroll View –
+It is used see a large data on a small part of the activity , wec can scroll through the help of scroll view.
+Intents–
+It is used to change activity , we can go from 1 activity to another using intents .
+i)	Explicit Intent : when we want to change the activity with in the same application for eg. In whatsapp we got the home screen consisting of different persons we can chat with, and after clicking for any of the one persons profile we can chat with them specifically this is what we call as change of activity from 1 activity to another.
+ii)	Implicit Intent : when we change activity from 1 activity to another and that another activity is in diff application .
+Widget-Cardview:
+Used for more interactive representation of our data
+WebView-
+It is used to show a website as an application fully .
+"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:textSize="16dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnandroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact for help"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="140dp"/>
+
+</LinearLayout>

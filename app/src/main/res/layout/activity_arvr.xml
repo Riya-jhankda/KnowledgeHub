@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:orientation="vertical"
+    tools:context=".ArvrActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" AR and VR"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="30dp"
+        android:textColor="@color/brown"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="226dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/arvr" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="340dp">
+
+        <TextView
+            android:layout_margin="30dp"
+            android:text="
+We spend a lot of time looking at screens these days. Computers, smartphones, and televisions have all become a big part of our lives; they're how we get a lot of our news, use social media, watch movies, and much more. Virtual reality (VR) and augmented reality (AR) are two technologies that are changing the way we use screens, creating new and exciting interactive experiences.
+
+Virtual reality uses a headset to place you in a computer-generated world that you can explore. Augmented reality, on the other hand, is a bit different. Instead of transporting you to a virtual world, it takes digital images and layers them on the real world around you through the use of either a clear visor or smartphone.
+
+With virtual reality, you could explore an underwater environment. With augmented reality, you could see fish swimming through the world around you.
+
+Watch the video below to learn about virtual reality and augmented reality.
+
+
+Virtual reality
+Virtual reality immerses you in a virtual world through the use of a headset with some type of screen displaying a virtual environment. These headsets also use a technology called head tracking, which allows you to look around the environment by physically moving your head. The display will follow whichever direction you move, giving you a 360-degree view of the virtual environment.
+
+Types of VR devices
+At the moment, there are two major types of headsets. Both have their pros and cons, which you'll want to consider if you're looking to purchase one.
+
+The first type has a screen built in to the headset. These devices connect to a computer and require a pretty powerful system to operate smoothly. They have great graphics and perform well, but they're also pretty expensive. A few popular examples of these include the Oculus Rift, the Vive, and the PlayStation VR, which connects to the PlayStation 4 game console.
+
+Some of these devices come with handheld controllers that track your hands' movements as well, providing for a more interactive experience.
+
+A man looks through a virtual reality headset.
+The other type of headset houses your phone and uses its screen as the display. These don't require a computer and run completely off of apps on your smartphone. The graphics and performance levels on these headsets aren't quite as good as those with a built-in screen, but they do tend to be much cheaper. Some popular examples include Google Cardboard and the Gear VR.
+
+A woman uses a smartphone-based virtual reality headset.
+Augmented reality
+Augmented reality allows you to see the world around you with digital images layered on top of it. There are currently a couple of AR headsets available, including the Microsoft HoloLens and the Magic Leap. However, they are currently more expensive than VR headsets, and are marketed primarily to businesses.
+
+A man uses a Hololens device at home.
+Augmented reality can also be used on devices like smartphones and laptops without the use of a headset. There are a variety of apps that use AR, including some that allow you to translate text using your camera, identify stars in the sky, and even see how your garden would look with different plants. You may have even previously used AR without realizing it, while playing a game like Pokemon Go or using filters on Snapchat.
+
+A person sees augmented reality through their iPad screen.
+Watch the following video to see how augmented reality could be applied in the near future.
+
+
+Both VR and AR technologies are growing at a pretty rapid pace. Many experts predict that they'll continue to become more and more popular in the near future. As technology becomes more advanced, it'll be exciting to see how they'll be applied to both business and everyday life!
+"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16dp"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact for help"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="140dp"/>
+
+
+
+
+</LinearLayout>
