@@ -14,9 +14,10 @@ class ArvrActivity : AppCompatActivity() {
         val arvr=findViewById<Button>(R.id.btnar)
 
         arvr.setOnClickListener {
-            val intent=Intent(Intent.ACTION_CALL)
-            intent.data= Uri.parse("9045322104")
-            startActivity(intent)
+            val phoneNumber = "9045322104" // Replace with the actual phone number
+            val callIntent = Intent(Intent.ACTION_DIAL)
+            callIntent.data = Uri.parse("tel:$phoneNumber")
+            startActivity(callIntent)
         }
     }
 }

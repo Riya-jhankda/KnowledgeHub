@@ -14,9 +14,11 @@ class AndroidActivity : AppCompatActivity() {
         val andr=findViewById<Button>(R.id.btnandroid)
 
         andr.setOnClickListener {
-            val intent= Intent(Intent.ACTION_CALL)
-            intent.data= Uri.parse("9045322104")
-            startActivity(intent)
+            val phoneNumber="9045322104"
+            val callIntent= Intent(Intent.ACTION_DIAL)
+            callIntent.data= Uri.parse("tel:$phoneNumber")
+            startActivity(callIntent)
         }
+
     }
 }

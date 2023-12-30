@@ -14,9 +14,10 @@ class CyberActivity : AppCompatActivity() {
         val cyber=findViewById<Button>(R.id.btncyber)
 
         cyber.setOnClickListener {
-            val intent= Intent(Intent.ACTION_CALL)
-            intent.data= Uri.parse("9045322104")
-            startActivity(intent)
+            val phoneNumber="9045322104"
+            val callIntent= Intent(Intent.ACTION_DIAL)
+            callIntent.data= Uri.parse("tel:$phoneNumber")
+            startActivity(callIntent)
         }
     }
 }
